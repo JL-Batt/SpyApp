@@ -75,9 +75,9 @@ before running the app on a device.
    
 # Notes
 
-It's been a while since I've been able to properly look at this, seeing as we "finished" it
-at the end of March, and it's July at the time of upload, but I'll be fixing any bugs I 
-find and add comments over time. 
+It's been a while since I've been able to properly look at this, seeing as we submitted 
+the project at the end of March, and it's July at the time of upload, but I'll be fixing 
+any bugs I find and add comments over time. 
 
 Also, tap the Spy Icon on the Main screen 5 times for a little tune...
    
