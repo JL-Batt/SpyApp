@@ -24,7 +24,8 @@ as username and password encryption using Salt (see PHP files), as well as some 
 such as live camera rotation.
 
 For our first time developing a Mobile Application and our first real experience with Java, this turned 
-out pretty well, especially as we ended up scoring full marks for the assignment.
+out pretty well - long days, late nights and a LOT of googling... It must have paid off, as we ended up scoring 
+full marks for the assignment.
 
 # Software Requirements
 1. Android Studio
