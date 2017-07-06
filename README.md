@@ -61,7 +61,8 @@ before running the app on a device.
    
 2. You must have the PHP files in the appropriate directory for 
    use with your app and server. These are all located in the php 
-   directory of this repo, so you can just copy them over to where they're needed.
+   directory of this repo, so you can just copy them over to where they're needed
+   (ie. the htdocs folder if you're using XAMPP).
    
 3. The SQL script used to create the database that contains user details can be found in
    "spyappusers.txt"
