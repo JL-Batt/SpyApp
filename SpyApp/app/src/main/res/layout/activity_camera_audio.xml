@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_camera_audio"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.jessebatt.spyapp.CameraAudio"
+    android:weightSum="1"
+    android:orientation="horizontal">
+
+
+    <FrameLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:rotation='90'
+        tools:visibility="visible">
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/background1"
+        android:layout_width="match_parent"
+        android:layout_height="533dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/background_light"
+        android:visibility="visible"
+        app:srcCompat="@drawable/google_home_screen3" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:adjustViewBounds="false"
+        android:rotation="90"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:visibility="visible"
+        android:onClick="show"
+        android:background="@android:color/transparent"
+        android:layout_width="100dp"
+        android:layout_below="@+id/hiddencapture"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="120dp" />
+
+    <Button
+        android:id="@+id/capture"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="92dp"
+        android:onClick="captureImage"
+        android:text="Capture"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@+id/hide"
+        android:layout_marginEnd="19dp" />
+
+    <Button
+        android:id="@+id/hiddencapture"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="22dp"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="48dp"
+        android:background="@android:color/transparent"
+        android:onClick="HiddencaptureImage"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/hide"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:onClick="hide"
+        android:text="Hide"
+        android:visibility="invisible"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/hiddencapture"
+        android:layout_marginEnd="17dp" />
+
+</RelativeLayout>
+

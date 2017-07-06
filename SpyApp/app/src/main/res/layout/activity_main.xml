@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:background="@drawable/cogmode"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:onClick="playAudio"/>
+
+    <EditText
+        android:id="@+id/main_password"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textAlignment="textStart"
+        android:textColorHint="@color/textPrimary"
+        android:textColor="@color/textPrimary"
+        android:layout_below="@+id/main_name"
+        android:layout_alignStart="@+id/main_register" />
+
+    <EditText
+        android:id="@+id/main_name"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:hint="Name"
+        android:singleLine="false"
+        android:textAlignment="textStart"
+        android:textAllCaps="false"
+        android:textColorHint="@color/textPrimary"
+        android:textColor="@color/textPrimary"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/main_password"
+        android:layout_marginTop="46dp" />
+
+    <Button
+        android:id="@+id/main_register"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/changePass"
+        android:layout_below="@+id/main_login"
+        android:layout_marginTop="5dp"
+        android:background="@color/buttonPrimary"
+        android:onClick="main_register"
+        android:text="Register" />
+
+    <Button
+        android:id="@+id/main_login"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/main_register"
+        android:layout_below="@+id/main_password"
+        android:layout_marginTop="15dp"
+        android:background="@color/buttonPrimary"
+        android:elevation="0dp"
+        android:onClick="main_login"
+        android:text="Login" />
+
+    <TextView
+        android:id="@+id/changePass"
+        android:layout_width="150dp"
+        android:layout_height="20dp"
+        android:onClick="changePass_"
+        android:text="Change Your Password"
+        android:textAlignment="center"
+        android:textColor="@color/textPrimary"
+        android:layout_above="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_marginBottom="24dp" />
+
+</RelativeLayout>
